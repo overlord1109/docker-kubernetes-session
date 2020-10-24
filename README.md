@@ -3,15 +3,15 @@ Some notes / instructions and code to follow along with the Docker and Kuberenet
 
 # Prequisites:
 
-Docker installed for your OS (available on Linux and Windows 10); check installation with
+[Docker](https://docs.docker.com/engine/install/) installed for your OS (available on Linux and Windows 10); check installation with
 
     $ docker -v
 
-minikube installed for running a Kubernetes cluster locally; check installation with
+[minikube](https://minikube.sigs.k8s.io/docs/start/) installed for running a Kubernetes cluster locally; check installation with
 
     $ minikube start
 
-kubectl installed, check installation with
+[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed, check installation with
 
     $ kubectl version --client
     
