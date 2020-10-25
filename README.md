@@ -93,3 +93,13 @@ First, create an account at https://hub.docker.com/ then login via the command l
     $ docker login
     $ docker tag node-web-app:v1 overlord1109/node-app:v1
     $ docker push overlord1109/node-app:v1
+    
+# Kubernetes:
+
+## Start a local Kubernetes cluster:
+
+We are going to use minikube to deploy a local Kubernetes cluster, and see what all functionalities it provides.
+
+    $ minikube start --memory=2g --driver=docker --cpus=2
+    $ minikube dashboard
+
