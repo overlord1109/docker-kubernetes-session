@@ -41,6 +41,16 @@ Run our image:
 Verify version in the interactive terminal:
     
     $ cat /etc/lsb-release
+    
+Let's create a file inside the container:
+
+    $ touch myfile.txt
+    $ ls
+
+Start another container and see if the file is there:
+
+    $ docker run -it ubuntu:16.04
+    $ ls
 
 ## Build and run our own image:
 
