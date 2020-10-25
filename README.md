@@ -65,3 +65,20 @@ Check your image:
 Run your image:
 
     $ docker run -p 48000:8080 -d node-web-app:v1
+
+Run a docker image that exits after completing it's main process:
+
+    $ docker run --rm -it ubuntu:16.04 sleep 5
+    $ docker run --rm -it ubuntu:16.04 bash -c "sleep 3; echo all done"
+    
+Start a detached container:
+    
+    $ docker run -d -it ubuntu:16.04 bash
+
+Check running containers:
+    
+    $ docker ps
+    
+Attach into the container:
+
+    $ docker attach <container-name>
