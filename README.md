@@ -30,4 +30,4 @@ Check your image:
 
 Run your image:
 
-    $ docker run -p 48000:8080 -d node-web-app
+    $ docker run -p 48000:8080 -d node-web-app:v1
