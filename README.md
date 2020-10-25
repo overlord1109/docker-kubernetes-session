@@ -52,19 +52,7 @@ Start another container and see if the file is there:
     $ docker run -it ubuntu:16.04
     $ ls
 
-## Build and run our own image:
-
-After cloning this repository, go to the directory with code for a simple node app with 'cd docker/node-app'. Build the image:
-
-    $ docker build -t node-web-app:v1 .
-
-Check your image:
-
-    $ docker images
-
-Run your image:
-
-    $ docker run -p 48000:8080 -d node-web-app:v1
+### The Docker flow:
 
 Run a docker image that exits after completing it's main process:
 
@@ -82,3 +70,18 @@ Check running containers:
 Attach into the container:
 
     $ docker attach <container-name>
+
+
+## Build and run our own image:
+
+After cloning this repository, go to the directory with code for a simple node app with 'cd docker/node-app'. Build the image:
+
+    $ docker build -t node-web-app:v1 .
+
+Check your image:
+
+    $ docker images
+
+Run your image:
+
+    $ docker run -p 48000:8080 -d node-web-app:v1
