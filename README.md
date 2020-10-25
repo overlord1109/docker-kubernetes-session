@@ -85,3 +85,11 @@ Check your image:
 Run your image:
 
     $ docker run -p 48000:8080 -d node-web-app:v1
+    
+## Docker registry:
+
+First, create an account at https://hub.docker.com/ then login via the command line:
+
+    $ docker login
+    $ docker tag node-web-app:v1 overlord1109/node-app:v1
+    $ docker push overlord1109/node-app:v1
