@@ -22,7 +22,7 @@ Do these [post-installation steps](https://docs.docker.com/engine/install/linux-
 
 After cloning this repository, go to the directory with code for a simple node app with 'cd docker/node-app'. Build the image:
 
-    $ docker build -t node-web-app .
+    $ docker build -t node-web-app:v1 .
 
 Check your image:
 
