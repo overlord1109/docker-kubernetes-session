@@ -29,10 +29,18 @@ Let's pull an Ubuntu 16.04 image from the Docker registry:
 Check the image:
     
     $ docker images
+    
+Before running the image, let's verify our Host Ubuntu version in the terminal:
+    
+    $ cat /etc/lsb-release
 
 Run our image:
 
     $ docker run -it ubuntu:16.04
+    
+Verify version in the interactive terminal:
+    
+    $ cat /etc/lsb-release
 
 ## Build and run our own image:
 
