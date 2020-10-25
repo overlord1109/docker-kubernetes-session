@@ -103,3 +103,40 @@ We are going to use minikube to deploy a local Kubernetes cluster, and see what 
     $ minikube start --memory=2g --driver=docker --cpus=2
     $ minikube dashboard
 
+Let's check what namespaces we have by default
+
+    $ kubectl get namespace
+    
+## Pods:
+
+Before you create your first pod:
+
+    $ eval $(minikube docker-env)
+    $ docker build -t node-web-app:v1 .
+
+You can go ahead and create your first pod, like this:
+
+    $ kubectl run hello-app --image=node-web-app:v1 --image-pull-policy=Never
+
+## Services:
+
+We will now expose our pod via service, like this:
+
+    $ kubectl expose pod hello-app --type=LoadBalancer --port=8080
+    $ kubectl get service
+    $ minikube ip
+    
+## Deployments:
+
+Let’s create our deployment:
+
+Change directory to kubernetes folder, where you’ll find a deployment.yaml
+
+    $ kubectl apply -f deployment.yaml
+    $ kubectl get deployments
+
+Small experiment, what happens if I delete a pod:
+
+    $ kubectl delete pod <pod-name>
+
+
