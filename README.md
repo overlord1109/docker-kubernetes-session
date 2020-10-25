@@ -7,6 +7,8 @@ Some notes / instructions and code to follow along with the Docker and Kuberenet
 
     $ docker -v
 
+Do these [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/)
+
 [minikube](https://minikube.sigs.k8s.io/docs/start/) installed for running a Kubernetes cluster locally; check installation with
 
     $ minikube start
