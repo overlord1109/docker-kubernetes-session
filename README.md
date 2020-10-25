@@ -20,6 +20,22 @@ Do these [post-installation steps](https://docs.docker.com/engine/install/linux-
 
 # Docker:
 
+## First container:
+
+Let's pull an Ubuntu 16.04 image from the Docker registry:
+
+    $ docker pull ubuntu:16.04
+
+Check the image:
+    
+    $ docker images
+
+Run our image:
+
+    $ docker run -it ubuntu:16.04
+
+## Build and run our own image:
+
 After cloning this repository, go to the directory with code for a simple node app with 'cd docker/node-app'. Build the image:
 
     $ docker build -t node-web-app:v1 .
